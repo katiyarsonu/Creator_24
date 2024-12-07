@@ -1,4 +1,5 @@
 "use client"
+import { Analytics } from "@vercel/analytics/react"
 import React, { useState } from 'react'
 import SideNav from './_components/SideNav';
 import Header from './_components/Header';
