@@ -50,7 +50,7 @@ function billing() {
     const options={
       "key":process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
       "subscription_id":subId,
-      "name":'Tubeguruji AI Apps',
+      "name":'AI Content Generation',
       description:'Monthly Subscription',
       handler:async(resp:any)=>{
         console.log(resp);
@@ -106,7 +106,7 @@ function billing() {
         </h2>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 0$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> ₹ 0 </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
@@ -174,15 +174,17 @@ function billing() {
         </li>
       </ul>
 
-      {/* <a
+      <a
         href="#"
         className="mt-8 block rounded-full 
         border border-indigo-600 
-        px-12 py-3 text-center text-sm font-medium bg-gray-500 text-white
+        px-12 py-3 text-center text-sm font-medium bg-white-900 text-black
           hover:ring-1 hover:ring-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
       >
-        Currently Active Plan
-      </a> */}
+        Free Plan
+      </a>
+
+
     </div>
     <div className="rounded-2xl bg-white border border-gray-200 p-6 shadow-sm sm:px-8 lg:p-12">
       <div className="text-center">
@@ -192,7 +194,7 @@ function billing() {
         </h2>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 9.99$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> ₹ 99 </strong>
 
           <span className="text-sm font-medium text-gray-700">/month</span>
         </p>
